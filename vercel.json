@@ -1,9 +1,11 @@
 {
-  "functions": {
-    "api/glossary.js": {
-      "runtime": "@vercel/node@canary"
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/glossary.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/api/glossary",
