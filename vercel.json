@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/glossary.js": {
+      "runtime": "@vercel/node@canary"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/glossary",
+      "dest": "/api/glossary.js"
+    }
+  ]
+}
